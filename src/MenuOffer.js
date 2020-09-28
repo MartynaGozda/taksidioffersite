@@ -1,31 +1,23 @@
 
 import React from 'react';
 import './MenuOffer.scss';
-import Hamburger from "./Hamburger.js";
-
+import HamburgerOffer from "./HamburgerOffer.js";
 
 class MenuOffer extends React.Component {
-
-
     render() {
         return (
             <>
                 <div id="menuOffer">
+                <HamburgerOffer />
                     <div class="menu">
-                        <div class="logoBox">
-                            <img src={require('./img/logo-taksidi.png')} alt='logo' />
-                        </div>
-                        <Hamburger />
+                        
                         <ul class="navItems">
-                            <li class="navItem"><a href="#contactContainer">Nasze wyjazdy</a></li>
-                            <li class="navItem"><a href="#contactContainer">Okres specjalny</a></li>
-                            <li class="navItem"><a href="#contactContainer">Promocje</a></li>
-                            <li class="navItem"><a href="#contactContainer">Dlaczego My?</a></li>
-                            <li class="navItem"><a href="#contactContainer">O nas</a></li>
-                            <li class="navItem"><a href="#contactContainer">FAQ</a></li>
-                            <li class="navItem"><a href="#contactContainer">Kontakt</a></li>
-                            <li class="navItem"><a href="#contactContainer">Zaloguj</a></li>
-                            <li class="navItem"><a href="#contactContainer">PL<i class="arrow down"></i></a></li>
+                            <li class="navItem"><a href="#contactContainer">Opis ogólny</a></li>
+                            <li class="navItem"><a href="#contactContainer">Trasy</a></li>
+                            <li class="navItem"><a href="#contactContainer">Zakwaterowanie</a></li>
+                            <li class="navItem"><a href="#contactContainer">Atrakcje</a></li>
+                            <li class="navItem"><a href="#contactContainer">Dojazd</a></li>
+                            <li class="navItem"><a href="#contactContainer">Cena</a></li>
                         </ul>
                     </div>
                 </div>

@@ -1,5 +1,5 @@
 #sliderOffer {
-    height: 550px;
+    min-height: 550px;
     background-image: url("./img/cover-photo-sound.jpg");
     background-size: cover;
     background-position: center;
@@ -23,7 +23,8 @@
 
             .term {
                 display: flex;
-                h3 {
+                h3,
+                h3 span {
                     font-weight: 100;
                     color: white;
                     display: flex;
@@ -122,11 +123,47 @@
     }
 }
 
-
 @media only screen and(max-width: 1200px) {
     #sliderOffer {
         padding-left: 0;
+        height: 700px;
+        .titleTrip .container {
+            margin: auto;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            .term h3 {
+                justify-content: center;
+                flex-direction: column;
+
+                span {
+                    margin-right: 0;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        .bottomStrip {
+            height: 490px;
+            justify-content: center;
+            
+            .container {
+                align-items: center;
+                flex-direction: column;
+                margin-top: 70px;
+                justify-content: space-between;
+                height: 150px;
+
+            .oneBox {
+                margin-right: 0;;
+            }
+        }
+
+        .priceBox {
+            left: 50%;
+            right: 0;
+            align-items: center;
+            transform: translateX(-50%);
     }
+}}
 }
-
-

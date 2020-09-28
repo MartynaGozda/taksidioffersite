@@ -1,15 +1,15 @@
 import React from 'react';
 import './SliderOffer.scss';
-import MenuOffer from './MenuOffer.js';
+import MenuPage from './MenuPage.js';
 
 function SliderOffer() {
     return (
         <div id="sliderOffer">
-            <MenuOffer />
+            <MenuPage />
             <div className="titleTrip">
                 <div className="container">
                     <h2>Sound Project 2020</h2>
-                    <div className="term"><h3><img src={require('./img/icons/croatia-flag.png')} alt="flaga" />Serre Chevalier, Francja<i className="far fa-calendar-alt"></i>20.03- 29.03.2020</h3>
+                    <div className="term"><h3><span><img src={require('./img/icons/croatia-flag.png')} alt="flaga" />Serre Chevalier, Francja</span><span><i className="far fa-calendar-alt"></i>20.03- 29.03.2020</span></h3>
                     </div>
                 </div>
             </div>
