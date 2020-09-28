@@ -1,0 +1,132 @@
+#sliderOffer {
+    height: 550px;
+    background-image: url("./img/cover-photo-sound.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    .titleTrip {
+        position: absolute;
+        top: 100px;
+        color: white;
+        width: 100%;
+
+        .container {
+            width: 85%;
+            margin: auto;
+            h2 {
+                color: white;
+                font-weight: 400;
+                font-size: 30px;
+                margin-bottom: 0;
+            }
+
+            .term {
+                display: flex;
+                h3 {
+                    font-weight: 100;
+                    color: white;
+                    display: flex;
+                    align-items: center;
+                    font-size: 16px;
+                    margin-right: 10px;
+
+                    img {
+                        margin-right: 10px;
+                        height: 20px;
+                    }
+                }
+            }
+        }
+
+        i {
+            color: white;
+            margin: 0 10px;
+            font-size: 18px;
+        }
+    }
+
+    .bottomStrip {
+        width: 85%;
+        height: 300px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+
+        .container {
+            width: 630px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-end;
+            margin-bottom: 30px;
+
+            .oneBox {
+                width: auto;
+                background-color: #e4f4fb;
+                border-radius: 10px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 5px 15px;
+                margin-right: 10px;
+                p {
+                    font-size: 12px;
+                    padding-right: 10px;
+                    margin: 5px 0;
+                }
+
+                i {
+                    color: black;
+                }
+            }
+        }
+
+        .priceBox {
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            right: 0;
+            bottom: 30px;
+            border-radius: 10px;
+            background-color: white;
+            font-size: 13px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .price {
+                p {
+                    font-size: 15px;
+                    span {
+                        font-weight: 600;
+                        font-size: 17px;
+                    }
+                }
+            }
+
+            .amount {
+                .availability {
+                    font-weight: 600;
+                }
+            }
+
+            .btn {
+                width: 120px;
+                height: 40px;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+
+@media only screen and(max-width: 1200px) {
+    #sliderOffer {
+        padding-left: 0;
+    }
+}
+
+
