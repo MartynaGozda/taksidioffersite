@@ -1,0 +1,16 @@
+#tagWrapper {
+    display: flex;
+    justify-content: space-around;
+    width: 1000px;
+    margin: auto;
+    margin-top: 70px;
+    flex-wrap: wrap;
+    max-width: 90vw;
+}
+
+
+@media only screen and (max-width: 480px) {
+    #tagWrapper {
+        min-height: 750px;
+    }
+}

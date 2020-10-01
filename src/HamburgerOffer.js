@@ -14,11 +14,11 @@ class HamburgerOffer extends React.Component {
     render() {
         return (
             <div id="hamburgerOffer">
-                <div class="menuCollapsedoffer menuExpandedoffer">
-                
+                <div class="menuCollapsedoffer">
+                <div class="bar"></div>
                     <nav>
                         <ul>
-                            <li><a href="#contactContainer">Opis ogólny</a><div class="bar"></div></li>
+                            <li><a href="#contactContainer">Opis ogólny</a></li>
                             <li><a href="#contactContainer">Trasy</a></li>
                             <li><a href="#contactContainer">Zakwaterowanie</a></li>
                             <li><a href="#contactContainer">Atrakcje</a></li>

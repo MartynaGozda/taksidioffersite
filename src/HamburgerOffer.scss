@@ -1,5 +1,4 @@
 #hamburgerOffer {
-     
     .beforeAfter {
         transition: all 0.25s;
         content: "";
@@ -20,9 +19,17 @@
         width: 100%;
         z-index: 2;
         cursor: pointer;
-        display: none;
+        display: block;
 
-    
+        .logoBox {
+            display: flex;
+            align-items: center;
+            margin-top: -5px;
+
+            img {
+                height: 50px;
+            }
+        }
         p {
             color: white;
             position: absolute;
@@ -60,10 +67,9 @@
         height: auto;
         width: 100%;
         border-radius: 0px;
-        top: 0px;
+        top: 20px;
         right: 0;
         background-color: #0a1e2c;
-      
         ul {
             transition: all 0s;
             position: relative;
@@ -90,7 +96,7 @@
         .bar {
             background-color: transparent;
             transition: all 0.25s;
-            top: -30px;
+            top: 0px;
             &:before {
                 @extend .beforeAfter-expanded;
                 transform: rotate(45deg);
@@ -106,14 +112,10 @@
     }
 }
 
-#hamburgerOffer .menuExpandedoffer ul li .bar{
-top: 0;
-}
-
-@media only screen and (max-width: 1200px) {
+@media only screen and (min-width: 900px) {
     #hamburgerOffer {
         .menuCollapsedoffer {
-            display: block;
+            display: none;
         }
     }
 }
